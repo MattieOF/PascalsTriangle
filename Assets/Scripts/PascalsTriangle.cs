@@ -65,7 +65,7 @@ public class PascalsTriangle : MonoBehaviour
     {
         GameObject go = Instantiate(numberPrefab, canvas.transform);
         go.transform.position = GetNumberPos(row, column);
-        Debug.Log(go.transform.position);
+        // Debug.Log(go.transform.position);
         go.GetComponent<TextMeshProUGUI>().text = value.ToString();
         go.name = value.ToString() + " - " + new Vector2(row, column).ToString();
         objects.Add(go);
@@ -85,7 +85,7 @@ public class PascalsTriangle : MonoBehaviour
         int leftPos = 0 - (totalDiff / 2);
         pos.x = leftPos + (column * 500);
 
-        Debug.Log("Set pos to " + pos + " from " + new Vector2(row, column).ToString());
+        // Debug.Log("Set pos to " + pos + " from " + new Vector2(row, column).ToString());
 
         return pos;
     }
